@@ -1,0 +1,48 @@
+<footer class="bg-sage text-white text-sm lg:text-base">
+  {{ partial:layout/inner class="lg:!py-30" }}
+    <div class="grid grid-cols-12 gap-x-20">
+      <div class="col-span-6 md:flex md:gap-x-40 lg:gap-x-80">
+        <div>
+          <h3 class="font-lato-black font-black uppercase">Apleona Schweiz AG</h3>
+          <p>Kornhausgasse 7<br>4051 Basel</p>
+        </div>
+        <div class="mt-20 md:mt-3 lg:mt-6">
+          {{ partial:icons/logo-marketer class="block w-150 lg:w-175 h-auto" }}
+        </div>
+      </div>
+      <div class="col-span-6 flex justify-end items-end leading-[1.6] -mb-4 text-right">
+        <ul>
+          <li>
+            <a 
+              href="/impressum" 
+              title="Impressum"
+              class="no-underline hover:underline underline-offset-4 decoration-1 transition-all">
+              Impressum
+            </a>
+          </li>
+          <li>
+            <a 
+              href="/datenschutz" 
+              title="Datenschutz"
+              class="no-underline hover:underline underline-offset-4 decoration-1 transition-all">
+              Datenschutz
+            </a>
+          </li>
+          <li>
+            <a 
+              href="https://stoz.ch" 
+              title="design by stoz" 
+              target="_blank"
+              class="no-underline hover:underline underline-offset-4 decoration-1 transition-all">
+              design by stoz
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  {{ /partial:layout/inner }}
+</footer>
+{{ vite src="resources/js/app.js" }}
+{{ livewire:scripts }}
+</body>
+</html>
