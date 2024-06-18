@@ -56,13 +56,13 @@ const Filter = (function() {
           attrString += `[data-${k}="${v}"]`;
         }
 
-        // if k is 'object-building' then hide all buildings except the one selected
-        if (k === 'object-building') {
-          document.querySelectorAll(selectors.building).forEach(function(item) {
-            item.style.display = 'none';
-          });
-          document.querySelector(`[data-building="${v}"]`).style.display = 'block';
-        }
+        // // if k is 'object-building' then hide all buildings except the one selected
+        // if (k === 'object-building') {
+        //   document.querySelectorAll(selectors.building).forEach(function(item) {
+        //     item.style.display = 'none';
+        //   });
+        //   document.querySelector(`[data-building="${v}"]`).style.display = 'block';
+        // }
       });
       if (attrString.length > 0) {
         document.querySelectorAll(selectors.object).forEach(function(item) {

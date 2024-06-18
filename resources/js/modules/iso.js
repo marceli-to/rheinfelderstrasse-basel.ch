@@ -99,7 +99,13 @@ const Iso = (function() {
     if (!object) return;
     const objectData = object.dataset;
     object.classList.add('is-active');
-    iso.classList.add('is-active', objectData.objectState === 'free' ? 'is-available' : 'is-taken');
+
+    // find all data-iso="iso.dataset.iso"
+    const isos = document.querySelectorAll('[data-iso="' + isoData.iso + '"]');
+    isos.forEach(function(iso) {
+      iso.classList.add('is-active', objectData.objectState === 'free' ? 'is-available' : 'is-taken');
+    });
+
   };
 
   const clearIso = function() {

@@ -20,7 +20,7 @@ class Apartments extends Tags
     });
 
     // init array of apartments with buildings
-    $apartments = ['building_1', 'building_2', 'building_3', 'building_4'];
+    $apartments = ['building_1'];
 
     // group apartments by building
     $apartments = collect($data)->sortBy('floor')->groupBy(function ($item, $key) {
@@ -29,21 +29,15 @@ class Apartments extends Tags
       {
         return 'building_1';
       } 
-      elseif (in_array($ref_house, ['02']))
-      {
-        return 'building_2';
-      } 
     });
 
     // addresses
     $addresses = [
-      'building_1' => 'Haus 1 – Rheinfelderstrasse 1',
-      'building_2' => 'Haus 2 – Rheinfelderstrasse 3',
+      'building_1' => 'Haus 1 – Rheinfelderstrasse 1/3',
     ];
 
     $reference_date = [
       'building_1' => '1. September 2024',
-      'building_2' => '1. Oktober 2024',
     ];
 
     return [
