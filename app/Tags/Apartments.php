@@ -33,11 +33,11 @@ class Apartments extends Tags
 
     // addresses
     $addresses = [
-      'building_1' => 'Haus 1 – Rheinfelderstrasse 1/3',
+      'building_1' => 'Rheinfelderstrasse 1/3',
     ];
 
     $reference_date = [
-      'building_1' => '1. September 2024',
+      'building_1' => '1. Dezember 2024',
     ];
 
     return [
