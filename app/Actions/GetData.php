@@ -5,7 +5,6 @@ use Illuminate\Support\Facades\Storage;
 
 class GetData
 {
-  
   // All possible listing status
   protected $listing_status_all = ["pre", "act", "dis", "arc", "rem"];
   protected $listing_status_active = ["pre", "act", "dis"];
