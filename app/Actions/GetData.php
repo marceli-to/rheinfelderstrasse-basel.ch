@@ -33,7 +33,7 @@ class GetData
       $apartment['state'] = $states[$apartment['reference']] ?? $this->status_free;
       return $apartment;
     });
-    $data = $data->unique('reference');
+    // $data = $data->unique('reference');
 
     // Added for fix (09.11.2023)
     // it is possible that the same listing is in the list twice, so we need to remove duplicates
